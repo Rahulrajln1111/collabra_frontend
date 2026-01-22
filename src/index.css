@@ -1,0 +1,26 @@
+@import "highlight.js/styles/github-dark.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+/* WebKit browsers (Chrome, Edge, Safari) */
+.tabs-scroll::-webkit-scrollbar {
+  height: 2px;                     /* thin horizontal bar */
+}
+.tabs-scroll::-webkit-scrollbar-track {
+  background: transparent;         /* no bright track */
+}
+.tabs-scroll::-webkit-scrollbar-thumb {
+  background-color: rgba(255,255,255,0.10); /* very subtle light thumb */
+  border-radius: 2px;
+}
+
+/* Firefox */
+.tabs-scroll {
+  scrollbar-width: thin ;           /* make it thin */
+  scrollbar-color: rgba(255,255,255,0.10) transparent;
+}
